@@ -17,13 +17,28 @@ namespace Logging_JSON_UnitTest.Classes
         public string Metal { get; set; }
         public string Gem { get; set; }
 
-        bool _res;
+        string NewJewelryCollection { get; set; }
+
+        double PriceJewelryInDollars { get; set; }
+
+       public double  PriceJewelryInShekel { get; set; }
 
 
-public Jewelry(string metal, string gem)
+        public string NewCollection()
+        {
+            NewJewelryCollection = "Winter Flowers";
+            return NewJewelryCollection;
+        }
+
+        public Jewelry(string metal, string gem, double priceJewelryInDollars)
         {
             Metal = metal;
             Gem = gem;
+            PriceJewelryInDollars = priceJewelryInDollars;
+
+                PriceJewelryInShekel = Math.Round(PriceJewelryInDollars / 3.19, 2);
+
+
             //_logger = (new ServiceCollection()
             //.AddLogging(console => console.AddConsole(options => options.LogToStandardErrorThreshold = LogLevel.Information))
             //.BuildServiceProvider())
@@ -34,15 +49,17 @@ public Jewelry(string metal, string gem)
 
         }
 
-
-        public void NewCollection()
+        public double PriceInShekel(double PriceJewelryInDollars)
         {
-          // _logger.LogInformation($"New Collection {CollectionName}");
+
+            PriceJewelryInShekel = Math.Round(PriceJewelryInDollars / 3.19, 2);
+            return PriceJewelryInShekel;
         }
+
 
         public override string ToString()
         {
-            return "My jewelry: " + Metal + " " + Gem;
+            return "My jewelry: " + Metal + " " + Gem +", " + "Collection is " + NewJewelryCollection  + ". The price is " +  PriceJewelryInShekel + " ILS" + " and I love it!";
         }
 
     }

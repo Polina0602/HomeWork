@@ -26,7 +26,6 @@ namespace Logging_JSON_UnitTest
             })
 
 
- //.AddSingleton<IJewelryDataReader, JewelryDataReader>()
         .BuildServiceProvider();
 
             _logger = _serviceProvider.GetService<ILoggerFactory>()
@@ -40,10 +39,10 @@ namespace Logging_JSON_UnitTest
             /// This creates a new json file from an array
             /// </summary>
             List<Jewelry> JewelryListSet = new List<Jewelry>();
-            JewelryListSet.Add(new Jewelry("gold", "diamond"));
-            JewelryListSet.Add(new Jewelry("platina", "sapphire"));
-            JewelryListSet.Add(new Jewelry("gold", "topaz"));
-            JewelryListSet.Add(new Jewelry("white gold", "sparkling diamond"));
+            JewelryListSet.Add(new Jewelry("gold", "diamond", 1000));
+            JewelryListSet.Add(new Jewelry("platina", "sapphire", 28));
+            JewelryListSet.Add(new Jewelry("gold", "topaz", 345));
+            JewelryListSet.Add(new Jewelry("white gold", "sparkling diamond", 10000005));
 
             foreach (Jewelry jewelry in JewelryListSet)
             {
@@ -80,15 +79,23 @@ namespace Logging_JSON_UnitTest
             }
             #endregion
 
-            Jewelry earring = new Jewelry("red gold", "gem");
 
-            var t = earring.ToString();
-            _logger.LogInformation(t);
+            #region Lewelry and Collections
+            /// <summary>
+            /// This creates jewelry items
+            /// </summary>
+            Jewelry earring = new Jewelry("red gold", "gem", 45.14);
+            earring.NewCollection();
+            earring.PriceInShekel(45);
+            var e = earring.ToString();
+            _logger.LogInformation(e);
 
-            Ring GoldRing = new Ring("gold", "topaz", 14.5);
-
+            Ring GoldRing = new Ring("gold", "topaz", 14.5, 4);
+            GoldRing.NewCollection();
             GoldRing.Resize();
-
+            var gr = GoldRing.ToString();
+            _logger.LogInformation(gr);
+            #endregion
         }
 
 

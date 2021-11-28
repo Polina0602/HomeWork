@@ -6,6 +6,8 @@ namespace Logging_JSON_UnitTest.Interfaces
 {
     interface IJewelry
     {
-       // void NewCollection(int size, int newsize);
+       string NewCollection();
+
+        double PriceInShekel(double PriceInDollars);
     }
 }
