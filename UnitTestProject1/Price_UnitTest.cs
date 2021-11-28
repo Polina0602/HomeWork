@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Logging_JSON_UnitTest;
 
 namespace Logging_JSON_UnitTest.Test
 {
@@ -13,7 +14,7 @@ namespace Logging_JSON_UnitTest.Test
             double PriceJewelryInDollars = 38;
 
         //Act
-            public JewelryPriceInSHekel();
+            public PriceJewelryInShekel();
     //Assert
             Assert.AreEqual(11.91, PriceJewelryInShekel);
         }
