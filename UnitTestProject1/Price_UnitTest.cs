@@ -8,7 +8,7 @@ namespace Logging_JSON_UnitTest.Test
     public class JewelryPriceTest
     {
         [TestMethod]
-        public void JewelryPriceInSHekel()
+        public void JewelryPriceInShekel()
         {
             // Arrange
             double PriceJewelryInDollars = 38;
