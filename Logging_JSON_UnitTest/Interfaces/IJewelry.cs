@@ -8,6 +8,6 @@ namespace Logging_JSON_UnitTest.Interfaces
     {
        string NewCollection();
 
-        double PriceInShekel(double PriceInDollars);
+        double PriceInShekel();
     }
 }

@@ -66,7 +66,7 @@ namespace Logging_JSON_UnitTest
 
             try
             {
-                JewelryDataReader.Getjson(ref JewelryListTest, "C:/112/jewelry.json");
+                 JewelryDataReader.Getjson(JewelryListTest, "C:/111/jewelry.json");
             }
             catch (Exception ex)
             {
@@ -86,7 +86,7 @@ namespace Logging_JSON_UnitTest
             /// </summary>
             Jewelry earring = new Jewelry("red gold", "gem", 45.14);
             earring.NewCollection();
-            earring.PriceInShekel(45);
+            double inShekel = earring.PriceInShekel();
             var e = earring.ToString();
             _logger.LogInformation(e);
 

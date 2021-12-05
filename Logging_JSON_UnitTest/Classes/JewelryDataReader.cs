@@ -38,16 +38,17 @@ namespace Logging_JSON_UnitTest.Classes
 
 
         //    }
-        public static List<Jewelry> Getjson(ref List<Jewelry> EmptyList, string FileAddress)
+        public static List<Jewelry> Getjson( List<Jewelry> EmptyList, string FileAddress)
         {
             //try
             //{
                 using (StreamReader reader = new StreamReader(FileAddress))
                 {
                     string json = reader.ReadToEnd();
-                    EmptyList = JsonConvert.DeserializeObject<List<Jewelry>>(json);
-                }
-           // }
+                EmptyList.AddRange( JsonConvert.DeserializeObject<List<Jewelry>>(json));
+
+            }
+            // }
 
             //catch (Exception ex)
             //{

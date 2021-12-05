@@ -36,7 +36,7 @@ namespace Logging_JSON_UnitTest.Classes
             Gem = gem;
             PriceJewelryInDollars = priceJewelryInDollars;
 
-            PriceJewelryInShekel = Math.Round(PriceJewelryInDollars * 3.19, 2);
+            //PriceJewelryInShekel = Math.Round(PriceJewelryInDollars * 3.19, 2);
 
 
             //_logger = (new ServiceCollection()
@@ -49,7 +49,7 @@ namespace Logging_JSON_UnitTest.Classes
 
         }
 
-        public double PriceInShekel(double PriceJewelryInDollars)
+        public double PriceInShekel()
         {
 
             PriceJewelryInShekel = Math.Round(PriceJewelryInDollars * 3.19, 2);

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork", "HomeWork\HomeWo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging_JSON_UnitTest", "Logging_JSON_UnitTest\Logging_JSON_UnitTest.csproj", "{2B7007E3-FAC3-4519-AF31-53FB706CF3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging_JSON_UnitTest.Test", "UnitTestProject1\Logging_JSON_UnitTest.Test.csproj", "{84CF24CA-12BB-4E63-82F7-98C0EB3F70B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject6", "UnitTestProject6\UnitTestProject6.csproj", "{8B9CDFCB-1913-4195-847E-ACF8CBC95484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2B7007E3-FAC3-4519-AF31-53FB706CF3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B7007E3-FAC3-4519-AF31-53FB706CF3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B7007E3-FAC3-4519-AF31-53FB706CF3BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84CF24CA-12BB-4E63-82F7-98C0EB3F70B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84CF24CA-12BB-4E63-82F7-98C0EB3F70B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84CF24CA-12BB-4E63-82F7-98C0EB3F70B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84CF24CA-12BB-4E63-82F7-98C0EB3F70B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9CDFCB-1913-4195-847E-ACF8CBC95484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9CDFCB-1913-4195-847E-ACF8CBC95484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9CDFCB-1913-4195-847E-ACF8CBC95484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9CDFCB-1913-4195-847E-ACF8CBC95484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

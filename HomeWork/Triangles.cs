@@ -14,7 +14,7 @@ namespace HomeWork
             Console.WriteLine("Height of Triangle = ");
             int height = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= height; i++)
+            for (int i = 1; i < height; i++)
             {
                 if (i > 1)
                 {
